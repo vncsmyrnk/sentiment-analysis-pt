@@ -10,19 +10,15 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     container: python:3.9-alpine
+    defaults:
+      run:
+        working-directory: ./src
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: pip install -r requirements.txt | tee dependencies.log
+        run: pip install -r requirements.txt
 
       - name: Lint
-        run: flake8 src/*.py | tee lint.log
-
-      - name: Collect output artifacts
-        run: |
-          echo "# Install dependencies output" >> $GITHUB_STEP_SUMMARY
-          echo "$(cat dependencies.log)" >> $GITHUB_STEP_SUMMARY
-          echo "# Lint results" >> $GITHUB_STEP_SUMMARY
-          echo "$(cat lint.log)" >> $GITHUB_STEP_SUMMARY
+        run: flake8 src/*.py
