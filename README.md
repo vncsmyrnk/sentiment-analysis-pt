@@ -1,2 +1,3 @@
-# sentiment-analysis-pt
-API for performing sentiment analysis on portguese sentences using NLP
+# Sentiment Analysis on Portuguese Sentences
+
+API for performing sentiment analysis on portuguese sentences using NLP.
