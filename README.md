@@ -19,3 +19,10 @@ docker run --rm --it -v "$(pwd)":/var/app/ -p 5000:5000 sentiment-analysis-pt-de
 pip install -r requirements.txt
 flask --app app run --host=0.0.0.0
 ```
+
+## Project steps
+
+- [x] REST API minimal app
+- [x] CI Pipeline
+- [ ] Integranting NLP sentiment classification
+- [ ] CD Pipeline
