@@ -1,6 +1,6 @@
 ![CI](https://github.com/clocked-app/calculations-api/actions/workflows/ci.yml/badge.svg)
 
-# Sentiment Analysis on Portuguese Sentences
+# Sentiment Analysis in Portuguese Sentences
 
 API for performing sentiment analysis on portuguese sentences using NLP.
 
