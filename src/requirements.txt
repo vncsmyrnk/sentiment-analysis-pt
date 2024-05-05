@@ -3,3 +3,6 @@ flake8==7.0.0
 gunicorn==22.0.0
 pytest==8.1.0
 coverage==7.5.0
+transformers==4.40.0
+tensorflow==2.14.0
+tf-keras==2.15.0
