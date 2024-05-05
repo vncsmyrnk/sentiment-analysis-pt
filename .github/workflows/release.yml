@@ -34,7 +34,5 @@ jobs:
             ## Changelog
 
             ${{ steps.github_release.outputs.changelog }}
-
-            Image available on: https://hub.docker.com/r/clockedwtc/wtc
           draft: false
           prerelease: false
