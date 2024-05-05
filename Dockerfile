@@ -1,12 +1,11 @@
 # Stage 1: Base image
-FROM python:3.9-alpine as base
-RUN apk add bash
+FROM tensorflow/tensorflow:2.14.0 as base
 SHELL ["/bin/bash", "-c"]
 WORKDIR /var/app/
 COPY src/ .
 
 # Stage 2: Optmized deploy-ready image
-FROM python:3.9-alpine
+FROM tensorflow/tensorflow:2.14.0
 WORKDIR /var/app/
 COPY --from=base /var/app .
 RUN pip install -r requirements.txt
