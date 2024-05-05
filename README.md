@@ -8,6 +8,8 @@
 
 API for performing sentiment analysis in portuguese sentences using NLP.
 
+This project aims at analyzing and predicting sentiments associated with texts written in the Portuguese language through NLP. This initiative takes into account the absence of similar tools in this language, as much of the research and applications focus on the English language. Technically, it is an API that returns a sentiment analysis related to certain inputs. To do this, pretrained models and tools for working with tasks related to natural language processing are used.
+
 This project is based on [TensorFlow](https://www.tensorflow.org/) and [Transformers](https://huggingface.co/docs/transformers/index) for the NLP features and [Flask](https://flask.palletsprojects.com/en/3.0.x/) for routing.
 
 The NLP model used is [distilbert-base-multilingual-cased-sentiments-student](https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student), available on the 🤗 Hugging Face Hub.
@@ -41,15 +43,15 @@ Example respose:
   [
     {
       "label": "positive",
-      "score": 0.5036446452140808
+      "score": 0.7563667297363281
     },
     {
       "label": "neutral",
-      "score": 0.12653151154518127
+      "score": 0.09914696961641312
     },
     {
       "label": "negative",
-      "score": 0.3698238730430603
+      "score": 0.1444862186908722
     }
   ]
 ]
